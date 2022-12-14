@@ -23,6 +23,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import CreateIcon from '@mui/icons-material/Create';
 import IconButton from "@mui/material/IconButton";
 import Divider from "@mui/material/Divider";
+import ReplyIcon from '@mui/icons-material/Reply';
 
 export default function Profile() {
   const [user, setUser] = useState(null);
@@ -80,7 +81,7 @@ export default function Profile() {
               </Grid>
             </Grid>
             <Grid container xs={12} sx={{display:"flex", direction:"row"}}>
-            <Grid container xs={7} marginLeft={3} marginTop={2}>
+            <Grid container xs={8} marginLeft={3} marginTop={2}>
               <Grid container xs={12} sx={{ display: "flex", alignItems: "center" }}>
                 <Grid item>
                   <Typography variant="body2" sx={{ display: "flex", alignItems: "center" }}><MedicalServicesIcon/>Antecedentes Médicos: Sin Antecedentes Medicos Cargados.</Typography>
@@ -90,8 +91,13 @@ export default function Profile() {
                     <Typography variant="body2">Link</Typography>
                   </Link>
                 </Grid>
+                <Grid item marginLeft={0.2} maxHeight={"40px"}>
+                  <IconButton aria-label="delete">
+                    <ReplyIcon fontSize="medium"/>
+                  </IconButton>
+                </Grid>
               </Grid>
-              <Grid container xs={12} marginTop={2} sx={{ display: "flex", alignItems: "center" }}>
+              <Grid container xs={12} marginTop={1} sx={{ display: "flex", alignItems: "center" }}>
                 <Grid item>
                   <Typography variant="body2" sx={{ display: "flex", alignItems: "center" }}><SportsIcon/>Apto Físico: Actualizado 15/08/2022.</Typography>
                 </Grid>
