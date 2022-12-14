@@ -71,7 +71,7 @@ export default function Journal() {
 
   return (
     <Grid container justifyContent={"center"}>
-      <Grid container xs={11} sx={{marginBottom:2}} spacing={2}>
+      <Grid container xs={11} sx={{marginBottom:2, marginTop:1}} spacing={2}>
         <Grid item xs={12}>
         <Accordion>
           <AccordionSummary
